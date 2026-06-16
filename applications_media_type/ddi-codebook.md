@@ -17,13 +17,12 @@ We recommend that you read the following RFCs before proceeding with this applic
  - [RFC 9694](https://www.iana.org/go/rfc9694) - Guidelines for the definition of new top-level media types 
  - [RFC 6838](https://www.iana.org/go/rfc6838) - Media type specifications and registration procedures 
 
-#### Your Full Name
-
+#### Your Full Name [1]
 ```
 Name of person submitting this form
 ```
 
-#### Your E-mail
+#### Your E-mail [2]
 
 ```
 E-mail
@@ -33,7 +32,7 @@ Please read the following questions carefully and provide complete answers. Writ
 
 When referring to specifications, please provide URLs (if applicable).
 
-#### Type Name
+#### Type Name [3]
 
 What is the media type name?
 
@@ -57,7 +56,9 @@ See the [Top-Level Media Types](https://www.iana.org/assignments/top-level-media
 
 #### Subtype Name
 
-What is the media subtype name? (The prefix, if any, will be taken from the drop-down menu and should be omitted from the text field.)
+What is the media subtype name? 
+
+_The prefix, if any, will be taken from the drop-down menu and should be omitted from the text field._ **[4]**
 
 ```
 Standards Tree (no prefix)
@@ -67,6 +68,8 @@ Options:
 - Vendor Tree (vnd. prefix)
 - Standards Tree (no prefix)
 - Personal Tree (prs. prefix)
+
+_Name:_ **[5]**
 
 ```
 ddi-codebook+xml
@@ -80,7 +83,7 @@ If the name includes a suffix (text that follows a "+" at the end of the subtype
 
 The appearance of a dot (".") in a standards-tree subtype name would require registration of a new facet, which may not be what is intended.
 
-#### Required Parameters
+#### Required Parameters [6]
 
 Describe the required parameters. (If none, enter "N/A.")
 
@@ -92,7 +95,7 @@ See [RFC 2046](https://www.iana.org/go/rfc2046), section 1, and [RFC 6838](https
 
 Text types should pay attention to the discussion of the charset parameter in [RFC 6838](https://www.iana.org/go/rfc6838), section 4.2.1.
 
-#### Optional Parameters
+#### Optional Parameters [7]
 
 Describe the optional parameters. (If none, enter "N/A.")
 
@@ -103,7 +106,7 @@ charset: Same as for application/xml as specified in RFC 7303.
 
 See [RFC 2046](https://www.iana.org/go/rfc2046), section 1, and [RFC 6838](https://www.iana.org/go/rfc6838), section 4.3.
 
-#### Encoding Considerations
+#### Encoding Considerations [8]
 
 ```
 binary (this media type may require encoding on transports not capable of handling binary)
@@ -115,7 +118,7 @@ Options:
 - binary (this media type may require encoding on transports not capable of handling binary)
 - framed (transport must provide framing information)
 
-_Additional notes (optional):_
+_Additional notes (optional):_ **[9]**
 
 ```
 Note
@@ -136,7 +139,7 @@ If the format is based on JSON or XML, "binary" should generally be selected due
 
 If the format is encoded using UTF-16, the encoding is always "binary."
 
-#### Security Considerations
+#### Security Considerations [10]
 
 Provide a discussion of the security considerations.
 
@@ -165,7 +168,7 @@ Finally, although it is discouraged, it is acceptable to simply say that the sec
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.6.
 
-#### Interoperability Considerations
+#### Interoperability Considerations [11]
 
 Provide a discussion of the interoperability considerations.
 
@@ -192,7 +195,7 @@ compliant with DDI versions 1 – 2.5 will also be compliant with version 2.6.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 
-#### Published specification
+#### Published specification [12]
 
 Provide references to the published specification.
 
@@ -205,7 +208,7 @@ Provide references to the published specification.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.10.
 
-#### Application Usage
+#### Application Usage [13]
 
 Describe applications which use/will use this media type.
 
@@ -216,7 +219,7 @@ statistical software packages, within research and academia.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 
-#### Fragment Identifier Considerations
+#### Fragment Identifier Considerations [14]
 
 ```
 Identical to the rules for application/xml as defined in RFC 7303.
@@ -224,7 +227,7 @@ Identical to the rules for application/xml as defined in RFC 7303.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.11.
 
-#### Restrictions on Usage
+#### Restrictions on Usage [15]
 
 ```
 N/A.
@@ -232,7 +235,7 @@ N/A.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.9.
 
-#### Provisional Registrations
+#### Provisional Registrations [16]
 
 Is this a request for provisional registration only? (Vendor-tree and personal-tree requests must select "No.")
 
@@ -250,37 +253,37 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 5.2.1 and the [provisio
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.12.
 
-_Deprecated alias names for this type_
+_Deprecated alias names for this type_ **[17]**
 
 ```
 N/A.
 ```
 
-_Magic number(s)_
+_Magic number(s)_ **[18]**
 
 ```
 N/A.
 ```
 
-_File extension(s)_
+_File extension(s)_ **[19]**
 
 ```
 .xml
 ```
 
-_Macintosh File Type Code(s)_
+_Macintosh File Type Code(s)_ **[20]**
 
 ```
 N/A.
 ```
 
-_Object Identifier(s) or OID(s) — See [RFC 1494](https://www.iana.org/go/rfc1494)._
+_Object Identifier(s) or OID(s) — See [RFC 1494](https://www.iana.org/go/rfc1494)._ **[21]**
 
 ```
 N/A.
 ```
 
-#### Intended Usage
+#### Intended Usage [22]
 
 ```
 COMMON
@@ -291,7 +294,7 @@ Options:
 - LIMITED USE
 - OBSOLETE
 
-_Additional information (if necessary):_
+_Additional information (if necessary):_ **[23]**
 
 ```
 N/A.
@@ -299,7 +302,7 @@ N/A.
 
 "LIMITED USE" can be appropriate when the media type is restricted in its usage, such as when it is used only in a particular protocol (e.g. HTTP, but not email) or application, and its use is not recommended in other contexts.
 
-#### Other Information & Comments
+#### Other Information & Comments [24]
 
 ```
 N/A.
@@ -309,20 +312,19 @@ N/A.
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 5.5.
 
-_Contact Name_
+_Contact Name_ **[25]**
 
 ```
 Name
 ```
 
-
-_Contact Email Address_
+_Contact Email Address_ **[26]**
 
 ```
 dditcmgr@gmail.com
 ```
 
-_Author/Change Controller (for standards-tree registrations, this is typically the standards body)_
+_Author/Change Controller (for standards-tree registrations, this is typically the standards body)_ **[27]**
 
 ```
 DDI Alliance, https://ddialliance.org/
