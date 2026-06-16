@@ -8,4 +8,4 @@ assignees: ''
 
 ---
 
-Please indicate the section you are referring to and cite the specific text you are commenting on.
+Please indicate the section you are referring to, and refer to a specific line or range of lines using the Code view, as described here https://github.com/ddialliance/mpawg/wiki/Copy-permalink.
