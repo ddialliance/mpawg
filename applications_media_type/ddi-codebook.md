@@ -1,8 +1,10 @@
 __How to read:__ 
-- The following text is based on the form available at https://www.iana.org/form/media-types. When rendered on GitHub, the suggested entries are displayed in a light grey highlighted box with a copy icon on the right. In the Markdown source, these sections are enclosed in triple backticks (` ``` `) and indicate the exact text to be entered into the form; any placeholders should be replaced as appropriate. 
+- The following text is based on the form available at https://www.iana.org/form/media-types. When rendered on GitHub, the suggested entries are displayed in a light grey highlighted box with a copy icon on the right. In the markdown source, these sections are enclosed in triple backticks (` ``` `) and indicate the exact text to be entered into the form; any placeholders should be replaced as appropriate. 
 - All other text reproduces the structure of the original form and serves explanatory purposes only. 
 - Where a selection from predefined options is required, the full list of available options - along with brief descriptions - is provided below.
 - After submission, the application will be reviewed and discussed on the media-types mailing list: https://mailarchive.ietf.org/arch/browse/media-types/
+- A list of media types that have already been registered is available from IANA: https://www.iana.org/assignments/media-types/media-types.xml
+- A list of standards organizations that have registered media types in the standards tree is available from IANA: https://www.iana.org/assignments/iesg-recognized-organizations/iesg-recognized-organizations.xhtml. As part of its initial media type registration, the DDI Alliance would also apply for inclusion on this list, subject to expert review.
 
 # Application for a Media Type
 
