@@ -22,13 +22,13 @@ We recommend that you read the following RFCs before proceeding with this applic
 
 #### Your Full Name [1]
 ```
-Name of person submitting this form
+Knut Wenzig
 ```
 
 #### Your E-mail [2]
 
 ```
-E-mail
+kwenzig@diw.de
 ```
 
 Please read the following questions carefully and provide complete answers. Write "N/A" for fields that are not applicable.
@@ -124,7 +124,7 @@ Options:
 _Additional notes (optional):_ **[9]**
 
 ```
-Note
+N/A.
 ```
 
 See [RFC 2045](https://www.iana.org/go/rfc2045), section 6, and [RFC 6838](https://www.iana.org/go/rfc6838), section 4.8.
@@ -318,13 +318,13 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 5.5.
 _Contact Name_ **[25]**
 
 ```
-Name
+Knut Wenzig
 ```
 
 _Contact Email Address_ **[26]**
 
 ```
-dditcmgr@gmail.com
+tc@ddialliance.org
 ```
 
 _Author/Change Controller (for standards-tree registrations, this is typically the standards body)_ **[27]**
