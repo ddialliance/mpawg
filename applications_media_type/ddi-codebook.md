@@ -176,24 +176,20 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.6.
 Provide a discussion of the interoperability considerations.
 
 ```
-DDI-Codebook is a lightweight representation of the DDI standard 
-(ISO/PAS 25955:2026, also described as DDI Common Core 1.0, 
-https://doi.org/10.5281/zenodo.17297309) intended primarily for documenting
-simple survey data. Interoperability is ensured through the use of a single,
-canonical data format defined by a publicly available XML Schema. Users 
-should validate instances against the specific schema version referenced. 
-While the XML Schema ensures structural consistency, independent 
-implementations must account for potential schema changes between major or
-minor versions. Furthermore, interoperability considerations for the 
-underlying XML syntax are handled in accordance with RFC 7303.
+This media type applies to DDI-Codebook instances only. Other DDI
+specifications (DDI-Lifecycle, DDI-CDI) use different models and
+serializations and are not covered by this registration.
 
-The canonical expression of DDI 1.* through 2.1 is a Document Type Definition 
-(DTD), although XML Schema versions have been created. The DTD can be 
-converted to a schema using XML software, but the DTD should be used as the 
-authoritative source for instance creation and validation.
-
-The DDI-Codebook development line is backward compatible meaning that instances 
-compliant with DDI versions 1 – 2.5 will also be compliant with version 2.6.
+Instances of different DDI-Codebook versions coexist in practice. A valid
+DDI-Codebook 2.5 instance becomes a valid 2.6 instance by changing the
+namespace from ddi:codebook:2_5 to ddi:codebook:2_6 and setting the
+version attribute of the codeBook element to "2.6"; no other changes are
+required. Versions 1.x–2.1 are defined by a DTD and carry no version
+attribute. Receivers SHOULD determine the version from the instance's
+namespace or, from version 2.5 onwards, the version attribute of the
+codeBook element; for earlier versions, from the document type
+declaration or schema reference. Interoperability of the underlying XML
+syntax follows RFC 7303.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
@@ -308,7 +304,14 @@ N/A.
 #### Other Information & Comments [24]
 
 ```
-N/A.
+DDI-Codebook is one of the DDI Alliance products whose shared,
+interoperable features are specified in ISO/PAS 25955:2026
+(https://www.iso.org/standard/92127.html). The DDI Alliance maintains
+the IANA-registered URN namespace "ddi" (RFC 9517), used to identify DDI
+resources down to individual metadata items. The related specifications
+DDI-Lifecycle (https://ddialliance.org/ddi-lifecycle) and DDI-CDI
+(https://ddialliance.org/ddi-cdi) are not covered by this
+registration; separate registrations are planned.
 ```
 
 #### Contact Person
