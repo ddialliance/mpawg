@@ -147,12 +147,30 @@ If the format is encoded using UTF-16, the encoding is always "binary."
 Provide a discussion of the security considerations.
 
 ```
-As a format using the +xml structured syntax suffix, it is subject to the 
-security risks associated with XML, such as XML External Entity (XXE) attacks
-and "Billion Laughs" denial-of-service attacks. The format does not contain
-"active content" (executable scripts), but it provides metadata for research 
-processes that must be interpreted carefully by receiving applications to avoid
-resource exhaustion or unauthorized information disclosure.
+As a format using the +xml structured syntax suffix, DDI-Codebook is
+subject to the security considerations for XML described in RFC 7303,
+including external entity (XXE) attacks and entity-expansion
+denial-of-service attacks ("Billion Laughs"). Processors SHOULD disable
+DTD processing and external entity resolution unless explicitly required.
+
+The DDI-Codebook specification defines no executable semantics. Several
+elements permit a restricted subset of XHTML for formatted text; this
+subset excludes script elements and event handler attributes, but
+hyperlinks may carry arbitrary URIs, including script-bearing schemes.
+Instances are frequently exchanged without schema validation, and text
+content may contain markup as escaped characters. Applications that
+render textual content (e.g., in web catalogues) MUST treat it as
+untrusted and sanitize it before display.
+
+Instances may contain URIs referencing external resources (data files,
+related materials, schemas, controlled vocabularies). Dereferencing them
+is not required to interpret the instance.
+
+Instances may contain information requiring confidentiality, in particular
+summary statistics (e.g., category frequencies) that can pose disclosure
+risks for small populations, and personal data about contributors. The
+format provides no confidentiality or integrity mechanisms; these must be
+provided externally, e.g., via TLS or XML Signature/Encryption.
 ```
 
 All media type registrations must describe their security considerations; simply saying there are none or leaving the section blank is unacceptable.
