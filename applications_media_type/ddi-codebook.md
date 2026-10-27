@@ -236,8 +236,12 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.10.
 Describe applications which use/will use this media type.
 
 ```
-Metadata management tools used in data repositories, social science archives,
-statistical software packages, within research and academia.
+Metadata management software, APIs, and web applications used to publish,
+archive, and disseminate data assets. It supports automated exchange and
+semantic integration among national statistical agencies, international
+organizations, data repositories, data librarians, and researchers, as
+well as developers, AI systems, and the broader social science and
+scientific communities across the public, academic, and private sectors.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
