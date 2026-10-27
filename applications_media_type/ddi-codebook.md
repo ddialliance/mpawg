@@ -103,7 +103,13 @@ Text types should pay attention to the discussion of the charset parameter in [R
 Describe the optional parameters. (If none, enter "N/A.")
 
 ```
-version: The version of the DDI-Codebook specification (e.g., "2.5").
+version: The DDI-Codebook specification version, given as "major.minor"
+(e.g., "2.6"). In a request (e.g., an HTTP Accept header), it indicates
+the version the client prefers. In a response, it indicates the version
+to which the instance conforms and SHOULD match the version declared in
+the instance. If the parameter is absent, no particular version is
+implied. In case of conflict, the version information in the instance
+takes precedence.
 charset: Same as for application/xml as specified in RFC 7303.
 ```
 
